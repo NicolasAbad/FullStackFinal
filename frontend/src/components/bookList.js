@@ -24,7 +24,7 @@ export default function BookList() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/book') 
+      .get('https://fullstackfinal.onrender.com/book') 
       .then((res) => {
         setBooks(res.data);
       })
@@ -35,7 +35,7 @@ export default function BookList() {
 
   const deleteBook = (id) => {
     axios
-      .delete(`http://localhost:5000/book/delete/${id}`)
+      .delete(`https://fullstackfinal.onrender.com/book/delete/${id}`)
       .then((response) => {
         console.log(response.data);
       });
