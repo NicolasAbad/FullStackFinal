@@ -16,7 +16,7 @@ export default function AddBook() {
     };
 
     axios
-      .post('http://localhost:5000/book/add', newBook) 
+      .post('https://fullstackfinal.onrender.com/book/add', newBook) 
       .then((res) => {
         window.location = '/';
       })
